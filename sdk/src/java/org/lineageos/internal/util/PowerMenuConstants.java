@@ -32,6 +32,15 @@ public class PowerMenuConstants {
     public static final String GLOBAL_ACTION_KEY_ASSIST = "assist";
     public static final String GLOBAL_ACTION_KEY_LOGOUT = "logout";
     public static final String GLOBAL_ACTION_KEY_EMERGENCY = "emergency";
+    public static final String GLOBAL_ACTION_KEY_HOME = "home";
+    public static final String GLOBAL_ACTION_KEY_APP_SWITCHER = "appswitcher";
+    public static final String GLOBAL_ACTION_KEY_CLOSE_APPS = "closeapps";
+
+    /**
+     * Apps pinned to the power menu, a '|' separated list of package names kept in
+     * {@link android.provider.Settings.Secure}
+     */
+    public static final String POWER_MENU_PINNED_APPS = "power_menu_pinned_apps";
 
     /**
      * Advanced restart menu actions
@@ -42,6 +51,9 @@ public class PowerMenuConstants {
     public static final String GLOBAL_ACTION_KEY_RESTART_FASTBOOT = "restart_fastboot";
 
     private static String[] ALL_ACTIONS = {
+        GLOBAL_ACTION_KEY_HOME,
+        GLOBAL_ACTION_KEY_APP_SWITCHER,
+        GLOBAL_ACTION_KEY_CLOSE_APPS,
         GLOBAL_ACTION_KEY_EMERGENCY,
         GLOBAL_ACTION_KEY_LOCKDOWN,
         GLOBAL_ACTION_KEY_POWER,
