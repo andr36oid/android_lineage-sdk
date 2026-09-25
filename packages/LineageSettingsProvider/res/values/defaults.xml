@@ -27,6 +27,10 @@
     <!-- Default for LineageSettings.System.SYSTEM_PROFILES_ENABLED -->
     <bool name="def_profiles_enabled">true</bool>
 
+    <!-- Default for LineageSettings.System.BERRY_BLACK_THEME
+         (pure black background while the dark theme is active) -->
+    <bool name="def_berry_black_theme">false</bool>
+
     <!-- Defaults for Secure -->
 
     <!-- Default for LineageSettings.Secure.ADVANCED_MODE -->

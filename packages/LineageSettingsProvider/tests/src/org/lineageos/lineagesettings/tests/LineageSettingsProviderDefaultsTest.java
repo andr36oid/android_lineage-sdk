@@ -72,6 +72,9 @@ public class LineageSettingsProviderDefaultsTest extends AndroidTestCase {
         SYSTEM_SETTINGS_DEFAULTS.add(new Setting(
                 LineageSettings.System.FORCE_SHOW_NAVBAR,
                 "R.integer.def_force_show_navbar"));
+        SYSTEM_SETTINGS_DEFAULTS.add(new Setting(
+                LineageSettings.System.BERRY_BLACK_THEME,
+                "R.bool.def_berry_black_theme"));
     }
 
     //SECURE
