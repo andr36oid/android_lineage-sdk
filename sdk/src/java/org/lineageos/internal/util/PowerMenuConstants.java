@@ -35,6 +35,7 @@ public class PowerMenuConstants {
     public static final String GLOBAL_ACTION_KEY_HOME = "home";
     public static final String GLOBAL_ACTION_KEY_APP_SWITCHER = "appswitcher";
     public static final String GLOBAL_ACTION_KEY_CLOSE_APPS = "closeapps";
+    public static final String GLOBAL_ACTION_KEY_KILL_APP = "killapp";
 
     /**
      * Apps pinned to the power menu, a '|' separated list of package names kept in
@@ -54,6 +55,7 @@ public class PowerMenuConstants {
         GLOBAL_ACTION_KEY_HOME,
         GLOBAL_ACTION_KEY_APP_SWITCHER,
         GLOBAL_ACTION_KEY_CLOSE_APPS,
+        GLOBAL_ACTION_KEY_KILL_APP,
         GLOBAL_ACTION_KEY_EMERGENCY,
         GLOBAL_ACTION_KEY_LOCKDOWN,
         GLOBAL_ACTION_KEY_POWER,
