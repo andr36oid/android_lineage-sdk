@@ -297,4 +297,7 @@
     <!-- Whether to notify fingerprint client of successful cancelled authentication
          (needed for some older vendor fingerprint HAL implementations) -->
     <bool name="config_fingerprintPostResetRunnableForAllClients">false</bool>
+
+    <!-- Apps pinned to the power menu until the user picks their own, package names -->
+    <string-array name="config_powerMenuDefaultPinnedApps" translatable="false" />
 </resources>

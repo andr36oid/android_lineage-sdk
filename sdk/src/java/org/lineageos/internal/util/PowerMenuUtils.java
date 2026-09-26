@@ -19,6 +19,7 @@ package org.lineageos.internal.util;
 import android.app.KeyguardManager;
 import android.content.Context;
 import android.os.UserHandle;
+import android.provider.Settings;
 
 import lineageos.providers.LineageSettings;
 
@@ -31,5 +32,19 @@ public final class PowerMenuUtils {
         boolean isPrimaryUser = UserHandle.getCallingUserId() == UserHandle.USER_OWNER;
 
         return advancedRestartEnabled && !keyguardLocked && isPrimaryUser;
+    }
+
+    /**
+     * Returns the apps pinned to the power menu, a '|' separated list of package names. Until
+     * the user saves their own choice, that's the device's config_powerMenuDefaultPinnedApps.
+     */
+    public static String getPinnedApps(final Context context, final int userId) {
+        final String pinned = Settings.Secure.getStringForUser(context.getContentResolver(),
+                PowerMenuConstants.POWER_MENU_PINNED_APPS, userId);
+        if (pinned != null) {
+            return pinned;
+        }
+        return String.join("|", context.getResources().getStringArray(
+                org.lineageos.platform.internal.R.array.config_powerMenuDefaultPinnedApps));
     }
 }
